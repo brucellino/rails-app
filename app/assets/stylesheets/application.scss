@@ -14,3 +14,58 @@
  
  @import "bootstrap";
 
+
+@import url('https://fonts.googleapis.com/css?family=Kelly+Slab|Raleway');
+
+/* Coolors Exported Palette - coolors.co/f1fdfd-0e0f11-85675d-6478a8-3b4547 */
+
+/* HSL */
+$color1: hsla(180%, 75%, 97%, 1);
+$color2: hsla(220%, 10%, 6%, 1);
+$color3: hsla(15%, 18%, 44%, 1);
+$color4: hsla(222%, 28%, 53%, 1);
+$color5: hsla(190%, 9%, 25%, 1);
+
+/* RGB */
+$color1: rgba(241, 253, 253, 1);
+$color2: rgba(14, 15, 17, 1);
+$color3: rgba(133, 103, 93, 1);
+$color4: rgba(100, 120, 168, 1);
+$color5: rgba(59, 69, 71, 1);
+
+$header-font-family: 'Kelly Slab', cursive;
+$body-font-family: 'Raleway', sans-serif;
+
+body {
+    font-family: $body-font-family;
+    background-color: $color1;
+    color: $color2;
+    height: 100%;
+}
+
+h1, h2, h3 {
+    font-family: $header-font-family;
+    color: $color5;
+}
+
+nav {
+    ul {
+        li {
+            font-family: $header-font-family;
+        }
+        a {
+            color: $color4;
+        }
+    }
+    background-color: $color2;
+}
+
+footer {
+    background-color: $color3;
+    color: $color1;
+    font-size: 0.5em;
+    height: 100%;
+    h1, h2, h3, h4 {
+        font-size: .75em;
+    }
+}
