@@ -12,9 +12,9 @@
  *
  */
  
- @import "bootstrap";
-
-
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 @import url('https://fonts.googleapis.com/css?family=Kelly+Slab|Raleway');
 
 /* Coolors Exported Palette - coolors.co/f1fdfd-0e0f11-85675d-6478a8-3b4547 */
@@ -61,11 +61,12 @@ nav {
 }
 
 footer {
-    background-color: $color3;
-    color: $color1;
-    font-size: 0.5em;
-    height: 100%;
     h1, h2, h3, h4 {
         font-size: .75em;
     }
+    background-color: $color5;
+    color: $color4;
+    font-size: 0.5em;
+    height: 100%;
+    
 }
