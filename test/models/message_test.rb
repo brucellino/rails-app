@@ -8,6 +8,7 @@ class MessageTest < ActiveSupport::TestCase
     assert msg.respond_to?(:email), 'does not respond to email'
     assert msg.respond_to?(:body), 'does not respond to body'
   end
+  
   test "should be valid when all attributes are set" do
     attrs = { 
       name: 'Bruce Becker',
@@ -18,4 +19,12 @@ class MessageTest < ActiveSupport::TestCase
     assert msg.valid?, 'should be valid'
   end
 
+  test 'All fields should be nonzero.' do
+    
+    msg = Message.new
+    refute msg.valid?, 'Blank messages are totally uncool'
+    assert_match /blank/, msg.errors[:name].to_s
+    assert_match /blank/, msg.errors[:email].to_s
+    assert_match /blank/, msg.errors[:body].to_s
+  end
 end
