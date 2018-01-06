@@ -1,4 +1,4 @@
-<%= form_for(@message , remote: true, :html => {:class => "form-group"}) do |f| %>
+<%= form_for(@message , url: messages_path, :html => {:class => "form-group"}) do |f| %>
     <fieldset>
         <div class="form-group">
             <%= f.text_field :name, placeholder: "Name" %>
@@ -9,5 +9,6 @@
         <div class="form-group">
             <%= text_area_tag :body, "What's  on your mind, fella?" %>
         </div>
+        <%= f.submit 'Send', :class => "btn btn-primary" %>
     </fieldset>
 <% end %>
