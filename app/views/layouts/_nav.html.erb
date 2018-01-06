@@ -4,8 +4,8 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <ul class="nav nav-pills">
-        <li class="btn nav-item"><%= link_to "About", pages_about_path, :class => "navbar-link" %></li>
-        <li class="btn nav-item"><%= link_to  "Contact", pages_contact_path %></li>
-        <li class="btn nav-item justify-content-end"><%= link_to  "login", :class => "btn" %></li>
+        <li class="btn nav-item"><%= link_to '<i class="fa fa-info"></i> About'.html_safe, pages_about_path, :class => "navbar-link" %></li>
+        <li class="btn nav-item"><%= link_to  '<i class="fa fa-envelope-o"></i> Contact'.html_safe, pages_contact_path %></li>
+        <li class="btn nav-item justify-content-end"><%= link_to  '<i class="fa fa-sign-in"></i> Login'.html_safe, :class => "btn" %></li>
     </ul>
 </nav>

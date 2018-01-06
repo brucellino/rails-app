@@ -21,4 +21,8 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test 'should get messages page' do
+    get messages_url
+    assert_response :success
+  end
 end
