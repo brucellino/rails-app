@@ -13,4 +13,24 @@ class MessagesControllerTest < ActionDispatch::IntegrationTest
     end
   
   end
+
+  test 'POST create' do
+    
+    post messages_path, params: { 
+      message: {
+        name: 'Bruce Becker', 
+        email: 'brucellino@gmail.com',
+        body: 'Testing body'
+      }
+    }
+    
+    assert_redirected_to new_message_url
+    follow_redirect!
+    assert_match /Thanks for the message!/, response.body
+  end
+
+  test 'Invalid POST create' do
+    post messages_path
+  end
+
 end
