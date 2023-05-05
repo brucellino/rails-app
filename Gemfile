@@ -36,7 +36,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 # You need jquery for bootstrap
-gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem 'jquery-rails', '~> 4.4'
 gem 'autoprefixer-rails', '~> 7.2', '>= 7.2.4'
 # Use Bootstrap gem
 gem 'bootstrap', '~> 4.0.0.alpha6'
