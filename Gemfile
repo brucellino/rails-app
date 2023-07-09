@@ -37,7 +37,7 @@ gem 'jbuilder', '~> 2.5'
 
 # You need jquery for bootstrap
 gem 'jquery-rails', '~> 4.4'
-gem 'autoprefixer-rails', '~> 7.2', '>= 7.2.4'
+gem 'autoprefixer-rails', '~> 10.0', '>= 10.4.13.0'
 # Use Bootstrap gem
 gem 'bootstrap', '~> 4.3.0'
 group :development, :test do
