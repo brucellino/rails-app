@@ -13,7 +13,7 @@ gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 4.3', '>= 4.3.9'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 6.0'
+gem 'sass-rails', '~> 5.0'
 # Use Fontawesome to make fonts awesome
 gem 'font-awesome-sass'
 # Use Uglifier as compressor for JavaScript assets
